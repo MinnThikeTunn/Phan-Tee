@@ -14,6 +14,12 @@ C#, WinUI 3, and Fluent Design. Local SQLite data. No Visual Studio GUI required
 [![Codex plugin](https://img.shields.io/badge/Codex-plugin-10A37F?style=flat-square)](#install)
 [![MIT license](https://img.shields.io/badge/license-MIT-F4C430?style=flat-square)](LICENSE)
 
+<br><br>
+
+<img src="asset/Phan-Tee_%20Build%20Any%20Windows%20App.png" alt="Phan-Tee: Build Any Windows App" width="100%" />
+
+<br><br>
+
 **[Quick start](#quick-start) · [How it works](#how-it-works) · [Skills](#skills) · [Specs](#specs) · [Install](#install)**
 
 </div>
