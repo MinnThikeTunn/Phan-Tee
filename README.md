@@ -21,7 +21,7 @@ C#, WinUI 3, and Fluent Design. Local SQLite data. No Visual Studio GUI required
 ## Quick start
 
 ```bash
-npx skills@latest add phan-tee/phan-tee
+npx skills@latest add MinnThikeTunn/Phan-Tee
 ```
 
 Then ask your agent:
@@ -101,11 +101,30 @@ Build the app in window-snapper.md with Phan-Tee.
 Pick one route per agent.
 
 <details open>
+<summary><b>Universal 1-Liner (All Agents & Global)</b></summary>
+
+Installs Phan-Tee across all detected agents on your computer (Claude Code, Codex, Cursor, Antigravity, Copilot, Zed):
+
+```bash
+npx skills@latest add MinnThikeTunn/Phan-Tee -g -y
+```
+
+</details>
+
+<details>
 <summary><b>Claude Code</b></summary>
 
+Via Claude Plugin Marketplace:
+
 ```text
-/plugin marketplace add phan-tee/phan-tee
+/plugin marketplace add MinnThikeTunn/Phan-Tee
 /plugin install phan-tee@phan-tee
+```
+
+Or via skills CLI:
+
+```bash
+npx skills@latest add MinnThikeTunn/Phan-Tee -a claude-code
 ```
 
 </details>
@@ -113,31 +132,41 @@ Pick one route per agent.
 <details>
 <summary><b>Codex</b></summary>
 
+Via Codex Plugin Marketplace:
+
 ```bash
-codex plugin marketplace add phan-tee/phan-tee
+codex plugin marketplace add MinnThikeTunn/Phan-Tee
 codex plugin add phan-tee@phan-tee
 ```
 
-</details>
-
-<details>
-<summary><b>Any other agent</b> (Cursor, Gemini CLI, Antigravity, Copilot)</summary>
-
-Uses [skills.sh](https://skills.sh). Install all skills, or one with `--skill`.
+Or via skills CLI:
 
 ```bash
-npx skills@latest add phan-tee/phan-tee -a <agent>
-npx skills@latest add phan-tee/phan-tee --skill=clone
+npx skills@latest add MinnThikeTunn/Phan-Tee -a codex
 ```
 
 </details>
 
 <details>
-<summary><b>By hand (PowerShell)</b></summary>
+<summary><b>Cursor, Antigravity, Copilot, Zed, Cline</b></summary>
+
+Uses [skills.sh](https://skills.sh). Install for a specific agent, or pick specific skills:
+
+```bash
+npx skills@latest add MinnThikeTunn/Phan-Tee -a cursor
+npx skills@latest add MinnThikeTunn/Phan-Tee -a antigravity
+npx skills@latest add MinnThikeTunn/Phan-Tee -a copilot
+npx skills@latest add MinnThikeTunn/Phan-Tee --skill=clone
+```
+
+</details>
+
+<details>
+<summary><b>By hand / Offline (PowerShell)</b></summary>
 
 ```powershell
-git clone https://github.com/phan-tee/phan-tee.git
-.\phan-tee\scripts\link-skills.ps1       # links every skill into ~/.claude/skills and ~/.agents/skills
+git clone https://github.com/MinnThikeTunn/Phan-Tee.git
+.\Phan-Tee\scripts\link-skills.ps1       # links every skill into ~/.claude/skills, ~/.agents/skills, and ~/.gemini/config/skills
 ```
 
 </details>

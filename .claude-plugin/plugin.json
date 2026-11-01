@@ -4,9 +4,9 @@
   "description": "Build any Windows app: skills to research, clone, plan, scaffold, design, integrate, optimize, test, and ship native Windows apps with C# and WinUI 3.",
   "author": {
     "name": "Phan-Tee Contributors",
-    "url": "https://github.com/phan-tee/phan-tee"
+    "url": "https://github.com/MinnThikeTunn/Phan-Tee"
   },
-  "repository": "https://github.com/phan-tee/phan-tee",
+  "repository": "https://github.com/MinnThikeTunn/Phan-Tee",
   "license": "MIT",
   "keywords": [
     "windows",

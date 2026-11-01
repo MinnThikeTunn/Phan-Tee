@@ -1,10 +1,12 @@
 <#
 .SYNOPSIS
-Links every skill in this repository into Antigravity, Claude Code, and Codex.
+Links every skill in this repository into all coding agents on Windows.
 Targets:
   - ~/.gemini/config/skills (Antigravity CLI)
   - ~/.claude/skills (Claude Code)
-  - ~/.agents/skills (Codex / Agent standards)
+  - ~/.agents/skills (Codex, Cursor, Copilot, Zed, Cline, OpenCode)
+  - ~/.cursor/skills (Cursor)
+  - ~/.codex/skills (Codex)
 Compatible with Windows PowerShell 5.1 and PowerShell 7.
 #>
 [CmdletBinding()]
@@ -18,7 +20,9 @@ $homeDir = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder
 $targets = @(
     (Join-Path $homeDir ".gemini\config\skills"),
     (Join-Path $homeDir ".claude\skills"),
-    (Join-Path $homeDir ".agents\skills")
+    (Join-Path $homeDir ".agents\skills"),
+    (Join-Path $homeDir ".cursor\skills"),
+    (Join-Path $homeDir ".codex\skills")
 )
 
 $skillDirs = Get-ChildItem -Path (Join-Path $repoRoot "skills\*\*\") -Directory
@@ -47,4 +51,4 @@ foreach ($target in $targets) {
     }
 }
 
-Write-Host "`nAll 21 skills linked into Antigravity, Claude Code, and Codex!" -ForegroundColor Green
+Write-Host "`nAll 21 skills linked into all coding agents (Antigravity, Claude Code, Codex, Cursor, Copilot)!" -ForegroundColor Green
