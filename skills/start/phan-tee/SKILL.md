@@ -1,0 +1,66 @@
+---
+name: phan-tee
+description: Build any Windows app. Router for Phan-Tee skills. Use when starting a new native Windows app, deciding the next step, or running /phan-tee.
+disable-model-invocation: true
+---
+
+# Build any Windows app
+
+Find where the user is on the path below, then call the Skill tool with the
+skill for that step. One skill per call.
+
+```text
+idea -> research -> clone (optional) -> app-brief -> user-stories -> new-win-app
+     -> win-design + design-system + app-icon -> improve-loop (ux, code, design, verify, commit) -> repeat
+```
+
+Pick the app's name first (app-brief, step 1) and create
+`<parent>/<AppName>/docs/` before research, so every skill writes into the
+same folder. Design comes right after the scaffold: tokens from the first
+view, and the real icon in every snapshot.
+
+## Plan
+
+| The user has | Skill |
+| --- | --- |
+| A vague idea, or asks "what should I build" | `research`, then `app-brief` |
+| An app they want to replace or rebuild | `clone` |
+| A brief or a screen index, no backlog | `user-stories` |
+| A spec from Phan-Tee's `specs/` folder | `app-brief` (it copies the spec) |
+
+## Build
+
+| The user wants to | Skill |
+| --- | --- |
+| Start a new project | `new-win-app` |
+| Write or fix C# and WinUI 3 code | `csharp-winui` |
+| Hook into Windows: hotkeys, taskbar tray, windows, screen capture, Named Pipes | `os-integrations` |
+| Make it fast: UI thread hangs, stutter, GPU compositing, memory | `performance` |
+| Let Claude Code, Codex, or scripts drive the app: a CLI, an MCP server | `agent-cli` |
+| Refactor, clean up, or check the code as it grows | `improve-architecture` |
+
+## Design
+
+| The user wants to | Skill |
+| --- | --- |
+| Decide how a feature works and what it says: names, flow, dialogs, accessibility | `ux-design` |
+| Make it look and feel like a Windows 11 app | `win-design` |
+| An accent or brand color, a color picker, tokens | `design-system` |
+| Their own parts and feel, not Microsoft's: buttons, rows, sidebar, icons | `design-kit` |
+| The look of an app they name, or screenshots of one | `design-from-app` |
+| One set of colors, radii, motion, and controls for the whole app | `design-system` |
+| Fix spacing and alignment, or check the layout on the 4px grid | `layout-grid` |
+| An app icon (.ico and AppX assets) | `app-icon` |
+
+## Ship
+
+| The user wants to | Skill |
+| --- | --- |
+| Build it and look at every page | `build-and-verify` |
+| Tests, a self-test, or an agent that drives the running app | `test-win-app` |
+| Work through the backlog on its own | `improve-loop` |
+
+## Done when
+
+You named the step, called its skill, and told the user which skill comes
+after it.

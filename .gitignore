@@ -1,0 +1,29 @@
+# .NET Build artifacts
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+TestResults/
+
+# Local stores and test databases
+*.db
+*.db-shm
+*.db-wal
+*.store
+*.store-shm
+*.store-wal
+
+# Snapshots and test output
+/tmp/
+*-shots/
+*-layout.json
+diff.png
+side-by-side.png
+overlay.png
+
+# Agent scratch
+.agent/
+*.trace

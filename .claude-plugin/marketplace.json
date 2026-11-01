@@ -1,0 +1,15 @@
+{
+  "name": "phan-tee",
+  "version": "1.0.0",
+  "description": "Agent skills to build any native Windows app with C# and WinUI 3.",
+  "owner": {
+    "name": "Phan-Tee Contributors"
+  },
+  "plugins": [
+    {
+      "name": "phan-tee",
+      "source": "./plugin.json",
+      "description": "Build any native Windows desktop app from idea to your Taskbar."
+    }
+  ]
+}

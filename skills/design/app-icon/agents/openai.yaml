@@ -1,0 +1,3 @@
+interface:
+  display_name: App Icon
+  short_description: Multi-resolution Windows .ico and asset generator from SVG.

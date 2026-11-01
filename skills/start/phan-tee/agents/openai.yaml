@@ -1,0 +1,5 @@
+interface:
+  display_name: Phan-Tee
+  short_description: Build any native Windows app. Router skill.
+policy:
+  allow_implicit_invocation: false

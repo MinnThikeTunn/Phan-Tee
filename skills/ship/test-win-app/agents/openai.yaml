@@ -1,0 +1,3 @@
+interface:
+  display_name: Test Windows App
+  short_description: xUnit tests, in-app self-test, and keyboard accelerator audit.

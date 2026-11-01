@@ -1,0 +1,3 @@
+interface:
+  display_name: Improve Loop
+  short_description: Autonomous story-by-story backlog execution loop.

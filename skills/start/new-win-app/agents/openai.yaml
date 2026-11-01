@@ -1,0 +1,5 @@
+interface:
+  display_name: New Windows App
+  short_description: Scaffold a native Windows WinUI 3 app from a working template.
+policy:
+  allow_implicit_invocation: false

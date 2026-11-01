@@ -1,0 +1,5 @@
+interface:
+  display_name: App Brief
+  short_description: One-page brief (docs/BRIEF.md) for a new Windows app.
+policy:
+  allow_implicit_invocation: false

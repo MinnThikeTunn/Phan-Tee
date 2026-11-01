@@ -1,0 +1,3 @@
+interface:
+  display_name: Build & Verify
+  short_description: Build app, capture light/dark snapshots, and audit grid.

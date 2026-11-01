@@ -1,0 +1,40 @@
+<Page
+    x:Class="__APP_NAME__.SettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="24">
+        <StackPanel MaxWidth="640" HorizontalAlignment="Left" Spacing="24">
+            <TextBlock Text="Settings" Style="{ThemeResource TitleTextBlockStyle}" />
+
+            <!-- Appearance Settings Card -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" CornerRadius="8">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="Appearance" FontWeight="SemiBold" />
+                    <RadioButtons x:Name="ThemeRadioButtons" SelectionChanged="ThemeRadioButtons_SelectionChanged">
+                        <RadioButton Content="System default" Tag="Default" IsChecked="True" />
+                        <RadioButton Content="Light" Tag="Light" />
+                        <RadioButton Content="Dark" Tag="Dark" />
+                    </RadioButtons>
+                </StackPanel>
+            </Border>
+
+            <!-- Data & Storage Card -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" CornerRadius="8">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="Local Storage" FontWeight="SemiBold" />
+                    <TextBlock x:Name="DatabasePathText" Text="Database: loading..." Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <!-- About Card -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" CornerRadius="8">
+                <StackPanel Spacing="4">
+                    <TextBlock Text="About __APP_NAME__" FontWeight="SemiBold" />
+                    <TextBlock Text="Built with Phan-Tee for native Windows 11." Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                    <TextBlock Text="Version 1.0.0" Foreground="{ThemeResource TextFillColorTertiaryBrush}" FontSize="12" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

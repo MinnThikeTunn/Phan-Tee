@@ -1,0 +1,3 @@
+interface:
+  display_name: Windows Integrations
+  short_description: Hotkeys, taskbar tray, window control, screen capture, and Win32 hooks.

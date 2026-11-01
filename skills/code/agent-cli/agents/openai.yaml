@@ -1,0 +1,5 @@
+interface:
+  display_name: Agent CLI
+  short_description: Command line and MCP server over Windows Named Pipes.
+policy:
+  allow_implicit_invocation: false
